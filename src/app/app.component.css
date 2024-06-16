@@ -1,24 +1,19 @@
 .principal-container{
-    display: flex;
-    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr;
+
 }
-main{
-    /* width:70%; */
-    /* min-width: 20rem; */
+footer{
+    grid-column: span 3;
+}
+
+main, footer{
     border: red solid 1px;
 }
 header{
-    display: flex;
-    justify-content: center;
-    height:auto;
-    min-height: 3rem;
-}
-img{
-    position: relative;
-    margin: 0 0 0 auto;
-}
-h1{
-    align-self: auto;
-    /* position: absolute; */
-    margin:0 auto;   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;   
 }

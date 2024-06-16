@@ -3,7 +3,7 @@ nav{
     padding:.3rem;
     border-radius:.3rem;
     border:1px solid red;
-    width:20rem;
+    min-width:20rem;
     height:auto;
 }
 li{
