@@ -1,0 +1,14 @@
+nav{
+    margin:0;
+    padding:.3rem;
+    border-radius:.3rem;
+    border:1px solid red;
+    width:20rem;
+    height:auto;
+}
+li{
+    align-items: center;
+    text-align: center;
+    border: red solid 1px;
+    padding:.2rem;
+}

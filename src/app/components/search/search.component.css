@@ -1,0 +1,31 @@
+/* *{
+    flex-direction: row;
+} */
+input{
+    width:12rem;
+    align-items: center;
+    border: blue solid 1px;
+    border-radius: 8px 0 0 8px;
+    padding-right: 4px;
+}
+.container-search{
+    display: flex; 
+    align-items: center;
+    justify-content:center;
+    border:solid 1px green;
+}
+svg{
+    /* display:absolute; */
+    border-radius: 50%;
+    border: none;
+}
+button{
+    width:23px;
+    height: 22.5px;
+    cursor:pointer;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -4px;
+    /*----------*/
+    border: 1px solid blue;
+}

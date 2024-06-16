@@ -1,0 +1,24 @@
+.principal-container{
+    display: flex;
+    /* flex-direction: column; */
+}
+main{
+    /* width:70%; */
+    /* min-width: 20rem; */
+    border: red solid 1px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height:auto;
+    min-height: 3rem;
+}
+img{
+    position: relative;
+    margin: 0 0 0 auto;
+}
+h1{
+    align-self: auto;
+    /* position: absolute; */
+    margin:0 auto;   
+}
