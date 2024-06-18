@@ -1,0 +1,21 @@
+{
+    "Name":"json-test-name",
+    "Logo":"url-logo",
+    "Field":[
+        {
+            "Field1":
+            [
+                {"data 1":"info data 1"},
+                {"data 2":"info data 2"}
+            ]
+        },
+        {
+            "Field2":
+            [
+                {"data 1":"info data 1"},
+                {"data 2":"info data 2"},
+                {"data 2":"info data 2"}
+            ]
+        }
+    ]
+}
