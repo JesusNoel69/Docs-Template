@@ -1,13 +1,24 @@
-<ul>
-    @for (field of fieldGroup; track $index)
-    {
-        <div class="field-group" (click)="showData(field)" id="field">
-            <li >
-                <p>{{field}}</p>
-                <svg
-                xmlns="http://www.w3.org/2000/svg"  width="8"  height="8"  viewBox="0 0 24 24"  fill="black"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-triangle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" 
-                /></svg>
+@if (fieldGroup.length) {
+    <ul>
+        @for (field of fieldGroup; track $index) {
+            <li class="field-group">
+                <div (click)="showData(field)">
+                    <p>{{ field }}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-triangle">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z"/>
+                    </svg>
+                </div>
+                @if (selectedField === field) {
+                    <ul>
+                        @for (dataKey of fieldData; track $index) {
+                            <li class="field-group" (click)="showInfo(dataKey)">
+                                <p>{{ dataKey }}</p>
+                            </li>
+                        }
+                    </ul>
+                }
             </li>
-        </div>   
-    }
-</ul>
+        }
+    </ul>
+}

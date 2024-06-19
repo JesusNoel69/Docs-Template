@@ -12,9 +12,9 @@
         {
             "Field2":
             [
-                {"data 1":"info data 1"},
-                {"data 2":"info data 2"},
-                {"data 2":"info data 2"}
+                {"data 1":"info data a"},
+                {"data 2":"info data b"},
+                {"data 3":"info data c"}
             ]
         }
     ]
